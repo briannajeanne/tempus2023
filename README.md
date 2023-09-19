@@ -62,7 +62,7 @@ VEP resources:
 
 You can run the pipeline by executing the main script with the following command on the commandline: 
     
-    ./pipeline.sh [options] <input_file> <output_prefix> <path_to_vep_script> <path_to_vep_cache> [path_to_scripts]
+    ./runner.sh [options] <input_file> <output_prefix> <path_to_vep_script> <path_to_vep_cache> [path_to_scripts]
 
 Options:
 
@@ -80,8 +80,9 @@ Arguments:
 
 Here's an example of how to run the pipeline    
     
-     /runner.sh input_data.txt output_prefix /path/to/vep_script /path/to/vep_cache /path/to/custom_scripts/
-
+    ./runner.sh [options] test_data_vcf.txt out_091823 /path/to/vep /path/to/vep/cache /path/to/directory/of/bbixler_scripts/
+    
+    
 
 ###-------------------------------Pipeline Steps
 The pipeline consists of the following steps:

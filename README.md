@@ -43,14 +43,14 @@ Before running the pipeline, make sure you have the following prerequisites:
     VEP (Variant Effect Predictor) installed and configured
 
 ###--------------------------Installation notes     
-      #Python packages:   
-      pip install pandas   
-      pip install requests    
-      #Commandline tools:      
-       sudo apt install bcftools    
-       sudo apt install vcftools   
-      #R packages:   
-       install.packages("dplyr")
+     #Python packages:   
+     pip install pandas   
+     pip install requests    
+     #Commandline tools:      
+     sudo apt install bcftools
+     sudo apt install vcftools 
+     #R packages:
+     install.packages("dplyr")
 
 VEP resources:   
     https://stackoverflow.com/questions/70324825/failing-to-install-vep-dependencies

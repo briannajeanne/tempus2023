@@ -78,7 +78,8 @@ Arguments:
 
 ###---------------------------- Example
 
-Here's an example of how to run the pipeline
+Here's an example of how to run the pipeline    
+    
 /runner.sh input_data.txt output_prefix /path/to/vep_script /path/to/vep_cache /path/to/custom_scripts/
 
 

@@ -80,7 +80,7 @@ Arguments:
 
 Here's an example of how to run the pipeline    
     
-    ./runner.sh [options] test_data_vcf.txt out_091823 /path/to/vep /path/to/vep/cache /path/to/directory/of/bbixler_scripts/
+    ./runner.sh test_data_vcf.txt out_091823 /path/to/vep /path/to/directory/with/cache /path/to/directory/with/bbixler_scripts/
     
     
 

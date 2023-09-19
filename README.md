@@ -1,5 +1,5 @@
 # tempus2023
-###------------------------------------Pipeline README—------------------------------------------###   
+###------------------------------------Pipeline README—------------------------------------------### <br>
 ###----------------------Introduction   
    
 The runner.sh is a bash script that calls bbixler_script1.py, bbixler_script2.sh, bbixler_script3.r, bbixler_script4.sh, bbixler_script5.sh in a reproducible way and with as few variable inputs as possible. Please make sure all the bbixler scripts are in the same directory. 

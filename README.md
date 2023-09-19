@@ -61,7 +61,7 @@ VEP resources:
 ###---------------------Running the Pipeline
 
 You can run the pipeline by executing the main script with the following command on the commandline: 
-
+    
     ./pipeline.sh [options] <input_file> <output_prefix> <path_to_vep_script> <path_to_vep_cache> [path_to_scripts]
 
 Options:

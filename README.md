@@ -35,22 +35,22 @@ To use this pipeline, follow the instructions below:
 
 Before running the pipeline, make sure you have the following prerequisites:
 
-    Bash shell environment
-    Bcftools
-    Vcftools 
-    Python3, including packages pandas and requests 
-    R, including dplyr package
-    VEP (Variant Effect Predictor) installed and configured
+   Bash shell environment
+   Bcftools
+   Vcftools 
+   Python3, including packages pandas and requests 
+   R, including dplyr package
+   VEP (Variant Effect Predictor) installed and configured
 
 ###--------------------------Installation notes     
-     #Python packages:   
+Python packages:   
      pip install pandas   
      pip install requests    
-     #Commandline tools:      
-     sudo apt install bcftools
-     sudo apt install vcftools 
-     #R packages:
-     install.packages("dplyr")
+Commandline tools:      
+     sudo apt install bcftools   
+     sudo apt install vcftools    
+R packages:    
+     install.packages("dplyr")   
 
 VEP resources:   
     https://stackoverflow.com/questions/70324825/failing-to-install-vep-dependencies
@@ -62,7 +62,7 @@ VEP resources:
 
 You can run the pipeline by executing the main script with the following command on the commandline: 
 
-./pipeline.sh [options] <input_file> <output_prefix> <path_to_vep_script> <path_to_vep_cache> [path_to_scripts]
+    ./pipeline.sh [options] <input_file> <output_prefix> <path_to_vep_script> <path_to_vep_cache> [path_to_scripts]
 
 Options:
 
@@ -85,22 +85,22 @@ Here's an example of how to run the pipeline
 ###-------------------------------Pipeline Steps
 The pipeline consists of the following steps:
 
-Reformat vcf and isolate columns of interest with bbixler_script1.py
-Generate QC files with vcftools and calculate allele frequency with bbixler_script2.sh.
-Reformat and filter allele frequencies to get column of maf values with bbixler_script3.r.
-Run through VEP API with and reformat to join bbixler_script4.sh
-Reformat and sort to join files and ultimately generate the final output in a tab-separated format using bbixler_script5.sh.
+1. Reformat vcf and isolate columns of interest with bbixler_script1.py   
+2. Generate QC files with vcftools and calculate allele frequency with bbixler_script2.sh.   
+3. Reformat and filter allele frequencies to get column of maf values with bbixler_script3.r.   
+5. Run through VEP API with and reformat to join bbixler_script4.sh   
+5. Reformat and sort to join files and ultimately generate the final output in a tab-separated format using bbixler_script5.sh.   
 
-###----------------------------------Output
+###----------------------------------Output   
 
 The final processed data will be saved as bbixler_output_prefix_final.tab, where output_prefix is the prefix provided during execution with a header that signals to the question being answered in each column. 
 
-###-------------------- Notes
+###-------------------- Notes   
 
 Please ensure that all required dependencies, scripts, and data files are in place before running the pipeline. Also chmod +x each script and make sure that all the scripts are within in same directory. 
 
-###-------------------- And a final note
-Thanks so much for the opportunity to apply! I look forward to hearing your feedback! 
-Brianna Jeanne Bixler
-18 Sept 2023
+###-------------------- And a final note   
+Thanks so much for the opportunity to apply! I look forward to hearing your feedback!    
+Brianna Jeanne Bixler     
+18 Sept 2023   
 
